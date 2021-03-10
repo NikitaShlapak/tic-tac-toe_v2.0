@@ -1,0 +1,77 @@
+procedure TPlayForm.drawing;
+begin
+ form2.Memo1.Lines.Add('Drawing started...');
+    if game[0,0]=X then begin
+     PlayForm.Image1.Picture.LoadFromFile('cross.png');
+     PlayForm.Image1.Enabled:=false;
+     end                   else
+    if game[0,0]=O then begin
+     PlayForm.Image1.Picture.LoadFromFile('zero.png');
+     PlayForm.Image1.Enabled:=false;
+     end                   ;
+    if game[0,1]=X then begin
+     PlayForm.Image4.Picture.LoadFromFile('cross.png');
+     PlayForm.Image4.Enabled:=false;
+     end                   else
+    if game[0,1]=O then begin
+     PlayForm.Image4.Picture.LoadFromFile('zero.png');
+     PlayForm.Image4.Enabled:=false;
+     end                   ;
+    if game[0,2]=X then begin
+     PlayForm.Image7.Picture.LoadFromFile('cross.png');
+     PlayForm.Image7.Enabled:=false;
+     end                   else
+    if game[0,2]=O then begin
+     PlayForm.Image7.Picture.LoadFromFile('zero.png');
+     PlayForm.Image7.Enabled:=false;
+     end                   ;
+    if game[1,0]=X then begin
+     PlayForm.Image2.Picture.LoadFromFile('cross.png');
+     PlayForm.Image2.Enabled:=false;
+     end                   else
+    if game[1,0]=O then begin
+     PlayForm.Image2.Picture.LoadFromFile('zero.png');
+     PlayForm.Image2.Enabled:=false;
+     end                   ;
+    if game[1,1]=X then begin
+     PlayForm.Image5.Picture.LoadFromFile('cross.png');
+     PlayForm.Image5.Enabled:=false;
+     end                   else
+    if game[1,1]=O then begin
+     PlayForm.Image5.Picture.LoadFromFile('zero.png');
+     PlayForm.Image5.Enabled:=false;
+     end                   ;
+    if game[1,2]=X then begin
+     PlayForm.Image8.Picture.LoadFromFile('cross.png');
+     PlayForm.Image8.Enabled:=false;
+     end                   else
+    if game[1,2]=O then begin
+     PlayForm.Image8.Picture.LoadFromFile('zero.png');
+     PlayForm.Image8.Enabled:=false;
+     end                   ;
+    if game[2,0]=X then begin
+     PlayForm.Image3.Picture.LoadFromFile('cross.png');
+     PlayForm.Image3.Enabled:=false;
+     end                   else
+    if game[2,0]=O then begin
+     PlayForm.Image3.Picture.LoadFromFile('zero.png');
+     PlayForm.Image3.Enabled:=false;
+     end                  ;
+    if game[2,1]=X then begin
+     PlayForm.Image6.Picture.LoadFromFile('cross.png');
+     PlayForm.Image6.Enabled:=false;
+     end                   else
+    if game[2,1]=O then begin
+     PlayForm.Image6.Picture.LoadFromFile('zero.png');
+     PlayForm.Image6.Enabled:=false;
+     end                  ;
+    if game[2,2]=X then begin
+     PlayForm.Image9.Picture.LoadFromFile('cross.png');
+     PlayForm.Image9.Enabled:=false;
+     end                  else
+    if game[2,2]=O then begin
+     PlayForm.Image9.Picture.LoadFromFile('zero.png');
+     PlayForm.Image9.Enabled:=false;
+     end;
+     form2.Memo1.Lines.Add('Drawing finished');
+end;   

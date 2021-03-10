@@ -1,0 +1,6 @@
+Коэффициенты:
+ +2000-to win;
+ +1000-to protect;
+ +500-fill center
+ +400-fill angle (угол)
+ +200-fill side (сторона)

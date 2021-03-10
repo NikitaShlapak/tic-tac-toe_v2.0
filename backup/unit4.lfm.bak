@@ -1,0 +1,44 @@
+object Form2: TForm2
+  Left = 180
+  Height = 229
+  Top = 182
+  Width = 175
+  BorderIcons = []
+  Caption = 'Console'
+  ClientHeight = 229
+  ClientWidth = 175
+  LCLVersion = '1.6.4.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 170
+    Top = 8
+    Width = 150
+    Lines.Strings = (
+      '-------Debug------'
+    )
+    OnChange = Memo1Change
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Hint = '"/" to see all commands'
+    Top = 200
+    Width = 150
+    OnEditingDone = Edit1EditingDone
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    Text = '/Command'
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 184
+    Width = 82
+    Caption = 'Command line:'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,29 @@
+object Form3: TForm3
+  Left = 316
+  Height = 207
+  Top = 231
+  Width = 384
+  BorderIcons = []
+  Caption = 'Developers'
+  ClientHeight = 207
+  ClientWidth = 384
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 150
+    Top = 16
+    Width = 368
+    Caption = 'Thanks to '#13#10#13#10#13#10'                                developers:'#13#10'                                        Nikita Shlapak'#13#10#13#10'                                                                         and testers:'#13#10'                                                                                    Logaza Anton'#13#10'                                                                                           Voronovich Kiril'#13#10'                                                                                                  Turanin Sasha'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 160
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = 'Close'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end

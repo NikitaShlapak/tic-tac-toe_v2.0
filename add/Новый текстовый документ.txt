@@ -1,0 +1,63 @@
+procedure TPlayForm.drawing;
+begin
+ form2.Memo1.Lines.Add('Drawing started...');
+    if (game[0,0]=X) and (PlayForm.Image1.Enabled=true) then
+     cross(PlayForm.Image1);
+
+
+
+    if (game[0,1]=X) {and (PlayForm.Image4.Enabled=true) }then
+    cross(playform.Image4);
+
+    if (game[0,2]=X) and (PlayForm.Image7.Enabled=true)  then
+    cross(PlayForm.Image7) ;
+
+    if (game[1,0]=X) and (PlayForm.Image2.Enabled=true) then
+    cross(PlayForm.Image2);
+
+    if (game[1,1]=X) and (PlayForm.Image5.Enabled=true) then
+    cross(PlayForm.Image5);
+
+    if (game[1,2]=X) and (PlayForm.Image8.Enabled=true) then
+    cross(PlayForm.Image8);
+
+    if (game[2,0]=X) and (PlayForm.Image3.Enabled=true) then
+    cross(PlayForm.Image3)     ;
+
+    if (game[2,1]=X) and (PlayForm.Image6.Enabled=true) then
+    cross(PlayForm.Image6);
+
+    if (game[2,2]=X) and (PlayForm.Image9.Enabled=true) then
+    cross(PlayForm.Image9) ;
+
+
+
+      if (game[0,0]=O) and (PlayForm.Image1.Enabled=true)  then
+      zero(PlayForm.Image1);
+
+        if (game[0,1]=O) and (PlayForm.Image4.Enabled=true) then
+        zero(PlayForm.Image4);
+
+         if (game[0,2]=O) and (PlayForm.Image7.Enabled=true) then
+         zero(PlayForm.Image7);
+
+          if (game[1,0]=O) and (PlayForm.Image2.Enabled=true) then
+          zero(PlayForm.Image2);
+
+           if (game[1,1]=O) and (PlayForm.Image5.Enabled=true) then
+           zero(PlayForm.Image5);
+
+            if (game[1,2]=O) and (PlayForm.Image8.Enabled=true) then
+            zero(PlayForm.Image8);
+
+            if (game[2,0]=O) and (PlayForm.Image3.Enabled=true) then
+            zero(PlayForm.Image3);
+
+              if (game[2,1]=O) and (PlayForm.Image6.Enabled=true) then
+              zero(PlayForm.Image6);
+
+               if (game[2,2]=O) and (PlayForm.Image9.Enabled=true) then
+               zero(PlayForm.Image9);
+
+     form2.Memo1.Lines.Add('Drawing finished');
+end;                                    

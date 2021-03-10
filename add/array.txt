@@ -1,0 +1,9 @@
+     '1':game[0,0]:=symb;
+     '2':game[1,0]:=symb;
+     '3':game[2,0]:=symb;
+     '4':game[0,1]:=symb;
+     '5':game[1,1]:=symb;
+     '6':game[2,1]:=symb;
+     '7':game[0,2]:=symb;
+     '8':game[1,2]:=symb;
+     '9':game[2,2]:=symb;     

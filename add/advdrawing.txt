@@ -1,0 +1,50 @@
+procedure tform1.cross(Sender: TObject);
+begin
+ //(Sender as timage).Picture.LoadFromFile('cross.png');
+
+   (Sender as timage).Canvas.pen.Color:=clred;
+    (Sender as timage).Canvas.Pen.Width:=10;
+
+    //(Sender as timage).Canvas.Line(5,5,85,85); //fast
+    // (Sender as timage).Canvas.Line(5,85,85,5);
+
+
+      for a:=2 to 17 do  begin
+      (Sender as timage).Canvas.Line(5,5,5*a,a*5);
+      Sleep(10);
+      end;                        //animation
+      for a:=2 to 17 do  begin
+      (Sender as timage).Canvas.Line(85,5,90-5*a,a*5);
+      Sleep(10);
+
+    end;
+end;
+procedure tform1.zero(Sender: TObject);
+var x,y:integer;
+  ang:real;
+begin
+
+    (Sender as timage).Canvas.pen.Color:=clBlue;
+    (Sender as timage).Canvas.Pen.Width:=1;
+   (Sender as timage).Canvas.Brush.Color:=clBlue;
+
+     //(Sender as timage).Picture.LoadFromFile('zero.png');
+
+     //(Sender as timage).Canvas.Ellipse(5,5,85,85);           //fast
+     //(Sender as timage).Canvas.Brush.Color:=clWhite;
+     // (Sender as timage).Canvas.Ellipse(15,15,75,75);
+
+
+     ang:=0;
+  while ang<=6.28 do begin
+     Sleep(1);
+    x:=45+round(35*cos(ang));
+    y:=45+round(35*sin(ang));                              //animation
+    (Sender as timage).Canvas.Ellipse(x-5,y-5,x+5,y+5);
+     ang:=ang+0.09;
+ end  ;
+  (Sender as timage).Canvas.Ellipse(5,5,85,85);
+     (Sender as timage).Canvas.Brush.Color:=clWhite;
+      (Sender as timage).Canvas.Ellipse(14,14,76,76);
+
+end; 
